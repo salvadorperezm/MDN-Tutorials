@@ -1,12 +1,13 @@
 #outer div ul .nav a {
   background-color: blue;
-
-  /* Resetting the background color to white */
-  background-color: unset;
-
   padding: 5px;
   display: inline-block;
   margin-bottom: 10px;
+}
+
+/* Resetting the background color to white*/
+#outer div ul .nav a {
+  background-color: unset;
 }
 
 div div li a {

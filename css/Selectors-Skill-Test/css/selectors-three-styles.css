@@ -40,7 +40,7 @@ a:hover {
   font-size: 150%;
 }
 
-.container::first-line {
+.container p:first-child:first-line {
   color: red;
 }
 

@@ -1,0 +1,50 @@
+/* My styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.my-links {
+  color: blue;
+}
+
+.my-links:visited {
+  color: rebeccapurple;
+}
+
+.my-links:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 899px) {
+  body {
+    width: 90%;
+  }
+}
+/* End of my styles */
+
+a {
+  color: orange;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container p:first-child {
+  font-size: 150%;
+}
+
+.container::first-line {
+  color: red;
+}
+
+tr:nth-child(even) {
+  background-color: #333;
+  color: white;
+}

@@ -16,7 +16,7 @@ body {
   border: 5px solid black;
   border-radius: 10px;
 
-  background-image: url(/images/balloons.jpg);
+  background-image: url("../images/balloons.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

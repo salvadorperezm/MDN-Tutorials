@@ -11,7 +11,7 @@ body {
 }
 
 .box {
-  width: 500px;
+  width: 300px;
   padding: 0.5em;
 
   border: 5px solid lightblue;
@@ -20,7 +20,7 @@ body {
 }
 
 h2 {
-  width: 200px;
+  text-align: center;
 
   background-image: url("../images/star.png"), url("../images/star.png");
   background-repeat: no-repeat, repeat-y;

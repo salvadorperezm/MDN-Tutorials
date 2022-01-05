@@ -7,18 +7,9 @@ body {
 }
 
 .box {
-  width: 150px;
-  height: 150px;
-  border-top: 5px solid rebeccapurple;
-  border-right: 5px solid grey;
-  border-bottom: 5px dotted red;
-  border-left: 5px dotted blue;
-  padding-top: 40px;
-  margin-bottom: 30px;
-}
+  inline-size: 150px;
+  block-size: 150px;
 
-.vertical {
-  writing-mode: vertical-rl;
   border-inline-start: 5px dotted blue;
   border-inline-end: 5px solid grey;
   border-block-start: 5px solid rebeccapurple;
@@ -27,4 +18,8 @@ body {
   padding-inline-start: 0;
   padding-block-start: 40px;
   margin-block-end: 30px;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
 }

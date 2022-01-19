@@ -49,10 +49,26 @@ footer {
 
 /* WRITE YOUR CODE BELOW HERE */
 
+/* Font Faces */
+@font-face {
+  font-family: "open_sansregular";
+  src: url("fonts/opensans-regular-webfont.woff2") format("woff2"),
+    url("fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "quicksandbold";
+  src: url("fonts/quicksand-bold-webfont.woff2") format("woff2"),
+    url("fonts/quicksand-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* General text styling */
 html {
   font-size: 10px;
-  font-family: "Courier New", Courier, monospace;
 }
 
 h1 {
@@ -64,10 +80,16 @@ h2 {
   font-size: 2.5rem;
 }
 
+h1,
+h2 {
+  font-family: "quicksandbold";
+}
+
 p,
 ul,
 ol {
   font-size: 1.25rem;
+  font-family: "open_sansregular";
 }
 
 section p {

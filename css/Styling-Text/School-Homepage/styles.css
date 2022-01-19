@@ -87,3 +87,73 @@ section p {
   letter-spacing: 1px;
   word-spacing: 1px;
 }
+
+/* Links */
+a {
+  color: #a66;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+  background-color: #ccc;
+  color: #fff;
+}
+
+a:active {
+  background-color: #a66;
+  color: #fff;
+}
+
+a[href*="https"] {
+  background-image: url("images/external-link-52.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  padding-right: 2rem;
+}
+
+/* Lists */
+ul,
+li {
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+nav li {
+  list-style-type: none;
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 3;
+  border: 1px solid #a66;
+}
+
+nav a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #a66;
+}
+
+nav li a:hover,
+nav li a:focus,
+nav li a:active {
+  background-color: #a66;
+  color: white;
+}

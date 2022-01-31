@@ -23,9 +23,9 @@ body {
 /* My code */
 .grid {
   grid-template-areas:
-    "one   one     one"
-    "two   three   three"
-    " .    four    four";
+    "one   one"
+    "two   three"
+    " .    four";
 }
 
 .one {

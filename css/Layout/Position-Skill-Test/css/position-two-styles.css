@@ -25,9 +25,7 @@ body {
   width: 150px;
 
   /* My code */
-  position: sticky;
-  top: 5px;
-  left: 5px;
+  position: fixed;
 }
 
 .content {

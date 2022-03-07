@@ -6,6 +6,7 @@ let result2 = 100 / (2 * 6);
 
 result *= result2;
 let finalResult = result.toFixed(2);
+console.log(typeof(finalResult));
 let finalNumber = Number(finalResult);
 // Don't edit the code below here!
 

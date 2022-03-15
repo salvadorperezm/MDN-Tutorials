@@ -3,8 +3,8 @@ const substring = 'green eggs and ham';
 
 // Add your code here
 const quoteLength = quote.length;
-const index = 14;
-const revisedQuote = `${quote.slice(0, index)}${substring}.`;
+const substringIndex = 14;
+const revisedQuote = quote.slice(0, substringIndex) + substring;
 
 // Don't edit the code below here!
 

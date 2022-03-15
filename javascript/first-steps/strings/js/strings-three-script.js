@@ -1,6 +1,8 @@
 const quote = 'I dO nOT lIke gREen eGgS anD HAM';
 
 // Add your code here
+const fixedQuote = quote[0].toUpperCase() + quote.slice(1).toLowerCase().replace("green eggs and ham", "paella");
+const finalQuote = fixedQuote + ".";
 
 // Don't edit the code below here!
 

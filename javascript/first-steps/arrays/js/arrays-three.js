@@ -7,10 +7,10 @@ myArray.push("Sasuke");
 
 // Each item will be printed on the developer's console
 for (let i = 0; i < myArray.length; i++) {
-    console.log(`${myArray[i]} (${i})`);
+    myArray[i] = (`${myArray[i]}  (${i})`);
 }
 
-let myString = myArray.join(",");
+let myString = myArray.join("-");
 
 // Don't edit the code below here!
 

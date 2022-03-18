@@ -30,24 +30,26 @@ function result() {
 
   if(customName.value !== '') {
     const name = customName.value;
-
+    newStory.replace("Bob", name);
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
-
+    const weight = `${Math.round((weight % 14))} stone`;
+    const temperature =  `${Math.round((temperature - 32) * .5556)} centigrade`;
   }
-
-  story.textContent = ;
-  story.style.visibility = 'visible';
-
+  
   // My code
-  const newStory = storyText;
+  let newStory = storyText;
 
   const xItem = randomValueFromArray(insertX);
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);
 
-  console.log(xItem);
+  newStory = newStory.replace(":insertx:", xItem);
+  newStory = newStory.replace(":inserty:", yItem);
+  newStory = newStory.replace(":insertz:", zItem);
+  newStory = newStory.replace(":insertx:", xItem);
+
+  story.textContent = newStory;
+  story.style.visibility = 'visible';
 }

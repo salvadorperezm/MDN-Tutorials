@@ -28,19 +28,20 @@ randomize.addEventListener('click', result);
 
 function result() {
 
+  let newStory = storyText;
+
   if(customName.value !== '') {
     const name = customName.value;
-    newStory.replace("Bob", name);
+    newStory = newStory.replace("Bob", name);
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = `${Math.round((weight % 14))} stone`;
-    const temperature =  `${Math.round((temperature - 32) * .5556)} centigrade`;
+    const weight = `${Math.round((300 % 14))} stone`;
+    const temperature =  `${Math.round((94 - 32) * .5556)} centigrade`;
+    newStory = newStory.replace("300 pounds", weight);
+    newStory = newStory.replace("94 fahrenheit", temperature);
   }
   
-  // My code
-  let newStory = storyText;
-
   const xItem = randomValueFromArray(insertX);
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);

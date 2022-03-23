@@ -15,7 +15,7 @@ const phonebook = [
 // Add your code here
 for (let i = 0; i < phonebook.length; i++) {
     if (name === phonebook[i].name) {
-        para.textContent = `${phonebook[i].name}, ${phonebook[i].number}`;
+        para.textContent = `${phonebook[i].name}, ${phonebook[i].number}.`;
         break;
     }
 }

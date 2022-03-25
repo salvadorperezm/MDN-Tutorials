@@ -14,7 +14,12 @@ function isPrime(num) {
 
 // Add your code here
 while (i > 1) {
-    
+    if (isPrime(i) && i === 2) {
+        para.textContent += `${i}.`;
+    } else if (isPrime(i)) {
+        para.textContent += `${i} - `;
+    }
+
     i--;
 }
 

@@ -12,8 +12,7 @@ function draw() {
   ctx.clearRect(0, 0, width, height);
   ctx.beginPath();
   ctx.fillStyle = "blue";
-  ctx.rect(x, y, width, height);
-  ctx.fill();
+  ctx.fillRect(x, y, width, height);
 }
 
 draw();

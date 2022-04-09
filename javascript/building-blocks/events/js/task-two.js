@@ -18,13 +18,7 @@ const size = 30;
 drawCircle(x, y, size);
 
 // Add your code here
-const preview = document.querySelector(".preview");
-const userInput = document.createElement("input");
-const resetButton = document.createElement("button");
-resetButton.textContent = "Reset";
-
-preview.appendChild(userInput);
-preview.appendChild(resetButton);
+const html = document.querySelector("html");
 
 function translateCircle(e) {
     switch(e.key) {
@@ -54,11 +48,4 @@ function translateCircle(e) {
     }
 } 
 
-userInput.addEventListener("keydown", translateCircle);
-
-resetButton.addEventListener("click", () => {
-    userInput.value = "";
-    const xOrigin = 50;
-    const yOrigin = 50;
-    drawCircle(xOrigin, yOrigin, size);
-});
+html.addEventListener("keydown", translateCircle);

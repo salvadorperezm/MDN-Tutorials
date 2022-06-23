@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+p {
+  color: purple;
+  margin: 0.5em 0;
+}
